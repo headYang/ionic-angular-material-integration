@@ -1,11 +1,35 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Ionic Angular-material Integration
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-
+  <mat-form-field>
+    <mat-select placeholder="Favorite food">
+      <mat-option *ngFor="let food of foods" [value]="food.value">
+        {{food.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <h3>Raised Buttons</h3>
+  <div class="button-row">
+    <button mat-raised-button>Basic</button>
+    <button mat-raised-button color="primary">Primary</button>
+    <button mat-raised-button color="accent">Accent</button>
+    <button mat-raised-button color="warn">Warn</button>
+    <button mat-raised-button disabled>Disabled</button>
+    <a mat-raised-button routerLink=".">Link</a>
+  </div>
+  <h3>Stroked Buttons</h3>
+  <div class="button-row">
+    <button mat-stroked-button>Basic</button>
+    <button mat-stroked-button color="primary">Primary</button>
+    <button mat-stroked-button color="accent">Accent</button>
+    <button mat-stroked-button color="warn">Warn</button>
+    <button mat-stroked-button disabled>Disabled</button>
+    <a mat-stroked-button routerLink=".">Link</a>
+  </div>
 </ion-content>

@@ -21,6 +21,10 @@ module.exports = {
     copySwToolbox: {
       src: ['{{ROOT}}/node_modules/sw-toolbox/sw-toolbox.js'],
       dest: '{{BUILD}}'
-    }
+    },
+    copyMaterialThemeCSS: {
+        src: ['{{ROOT}}/node_modules/@angular/material/prebuilt-themes/indigo-pink.css'],
+        dest: '{{WWW}}/assets'
+      }
   }
   

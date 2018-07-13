@@ -7,7 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MatButtonModule, MatSelectModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+     MatButtonModule,
+     MatSelectModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
